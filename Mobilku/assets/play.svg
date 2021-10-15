@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="movie-player-play-button" class="cls-1" d="M17.5,0A17.5,17.5,0,1,0,35,17.5,17.5,17.5,0,0,0,17.5,0Zm8.374,18.905L15.435,26.086a1.705,1.705,0,0,1-2.673-1.4V10.319a1.705,1.705,0,0,1,2.673-1.4l10.439,7.181a1.706,1.706,0,0,1,0,2.81Z"/>
+</svg>

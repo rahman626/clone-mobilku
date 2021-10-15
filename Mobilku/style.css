@@ -1,0 +1,1432 @@
+body {
+	margin: 0;
+    background-color: rgb(240, 239, 238);
+    font-family: 'Trebuchet MS', sans-serif;
+	padding: 0;
+}
+header {
+	height: 70px;
+  	width: 100%;
+    background-image: linear-gradient( to right, #1d2942e0, #111111);
+	position :fixed;
+  	top: 0;
+    z-index: 2;
+}
+.logo{
+    margin-left: 70px;
+    padding-top: 20px;
+}
+.logo-gambar{
+    height: 10%;
+    width: 10%;
+}
+.menu{
+  margin-left: 450px;
+  margin-top: -25px;
+}
+h4{
+  margin-top: -40px;
+  margin-bottom: 10px;
+  border: transparent;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+.dropbtn1 {
+  position: relative;
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  padding-bottom: 2px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropbtn1:after{
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 85px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #c05b05;
+}
+.dropbtn2 {
+  position: relative;
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  padding-bottom: 2px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropbtn2:after{
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 75px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #c05b05;
+}
+.dropbtn3 {
+  position: relative;
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  padding-bottom: 2px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropbtn3:after{
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 80px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #c05b05;
+}
+/* Warna background dari tombol utama ketika isi konten dropdown ditampilkan */
+.dropdown:hover h4 {
+  color: #c05b05;
+  border-bottom: 1px solid #c05b05;
+  transition: 0.3s ease-out ;
+}
+
+/* Isi dari <div> - Diperlukan untuk memposisikan isi konten dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Isi konten dropdown (disembunyikan) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  text-align: center;
+  background-color: white;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Link di dalam menu dropdown */
+.dropdown-content a {
+  color:black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Warna link di dalam dropdown ketika disorot */
+.dropdown-content a:hover {
+background-color:whitesmoke;
+color: #ff6600 !important;
+border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+/* Tampilkan isi konten dopdown ketika disorot */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.menunav{
+  position: relative;
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  padding-bottom: 2px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.menunav:hover h4 {
+  color: #c05b05;
+  border-bottom: 1px solid #c05b05;
+  transition: 0.3s ease-out ;
+}
+.menulogin{
+    margin-top: -25px;
+    padding-left: 35%;
+    float: right;
+}
+.login{
+    float: right;
+    margin-right: 50px;
+    margin-top: -45px;
+}
+.menu-login{
+    display: inline-block;
+    position: relative;
+}
+.dropbtn4 {
+    background-color: transparent;
+    position: fixed;
+    color:#c05b05;
+    padding-right: 30px;
+    font-size: 16px;
+    margin-left: -150px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropbtn4:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 120px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #c05b05;
+}
+  
+  /* Tombol dropdown saat mengarahkan kursor & fokus */
+  .dropbtn4:hover, .dropbtn4:focus {
+    color: #c05b05;
+    border-bottom: 1px solid white;
+    transition: 0.3s ease-out ;
+  }
+  
+  /* The container <div> - diperlukan untuk memposisikan konten dropdown */
+  .dropdown4 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Tersembunyi Secara Default) */
+  .dropdown-content4 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    margin-top: 45px;
+    margin-left: -180px;
+  }
+  
+  /* Links di dalam dropdown */
+  .dropdown-content4 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Mengubah warna link dropdown saat mengarahkan kursor */
+  .dropdown-content4 a:hover {background-color: #ddd}
+  
+  .show4 {display:block;}
+.button-masuk{
+    background-color: #22323efa;
+    color: white;
+    padding: 3px 60px;
+    margin: 15px;
+    border-radius: 8px;
+    border:transparent;
+}
+.button-daftar{
+    background-color: #c05b05;
+    color: white;
+    padding: 3px 60px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border:transparent;
+}
+.button-masuk:hover{
+    background-color: black;
+}
+.button-daftar:hover{
+    background-color: red;
+}
+.main{
+    margin-top: 90px;
+    margin-left:20px ;
+    margin-right: 20px;
+} 
+.pencarian{
+    display: flex;
+    width: 100%;
+    
+}
+.search{
+    padding: 4px;
+    padding-right: 920px;
+    font-size: 17px;
+    border: transparent;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.button-cari{
+    padding:7px 40px;
+    top: 70px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: transparent;
+    background-color: rgb(255, 102, 0);
+}
+.button-cari:hover{
+    background-color: rgb(216, 52, 24);
+}
+
+.search:focus{
+    outline-color: orangered;
+}
+.slider{
+    float: left;
+    width: 710px;
+    height:400px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    background-image: url(assets/images.jpg);
+}
+.slides{
+    width: 500%;
+    height: 400px;
+    display: flex;
+}
+
+.slider input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    margin-top: 50px;
+    width: 710px;
+    height: 300px;
+}
+.navigation-manual{
+    position: absolute;
+    width: 650px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #c05b05;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+.manual-btn:hover{
+    background: #c05b05;
+}
+#radio:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 650px;
+    justify-content: center;
+    margin-top: 360px;
+}
+.navigation-auto div{
+    border: 2px solid #c05b05;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 10px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #c05b05;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #c05b05;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #c05b05;
+}
+.pengisian{
+    border-radius: 7px;
+    float: right;
+    margin-top: 20px;
+    background-color: darkgrey ;
+}
+.btn {
+ display: inline-block;
+ padding: 7px ;
+ padding-right: 108px;
+ margin-left: 30px; 
+ margin-right: 30px;
+ margin-top: 30px;
+ margin-bottom: 10px;
+ border-radius: 7px;
+  background-color: white;
+}
+.radio-item {
+  display: inline-block;
+  position: static;
+  padding: 0 6px;
+}
+
+.radio-item input[type='radio'] {
+  display: none;
+}
+
+.radio-item label {
+  color: gray;
+  font-weight: normal;
+}
+
+.radio-item label:before {
+  content: " ";
+  display: inline-block;
+  position: static;
+  top: 5px;
+  left: 5px;
+  margin: 0 5px 0 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 11px;
+  border: 1px solid gray;
+  background-color: transparent;
+}
+
+.radio-item input[type=radio]:checked + label:after {
+  border-radius: 11px;
+  margin-top: -18px;
+  width: 14px;
+  height: 14px;
+  position: static;
+  top: 1px;
+  left: 14px;
+  content: " ";
+  display: block;
+  background: #c05b05;
+}
+
+.isijual{
+    margin: 7px 20px;
+    width: 100%;
+    display: flex;
+}
+.merek{
+    border: 3px solid #c05b05;
+    background-color: #c05b05;
+    color: white;
+    display: block;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 4px;
+    padding-left: 33px;
+}
+.model{
+    border: 3px solid #c05b05;
+    background-color: #c05b05;
+    color: white;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 4px;
+    padding-left: 33px;
+}
+.tipeinput{
+    border: 3px solid #c05b05;
+    background-color: #c05b05;
+    color: white;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 4px;
+    padding-left: 45px;
+}
+.tahuninput{
+    border: 3px solid #c05b05;
+    background-color: #c05b05;
+    color: white;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 4px;
+    padding-left: 34px;
+}
+.transmisi{
+    border: 3px solid #c05b05;
+    background-color: #c05b05;
+    color: white;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 4px;
+    padding-left: 10px;
+}
+.kota{
+  border: 3px solid #c05b05;
+  background-color: #c05b05;
+  color: white;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 4px;
+  padding-left: 43px;
+}
+.nomer{
+  border: 3px solid #c05b05;
+  background-color: #c05b05;
+  color: white;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 4px;
+  padding-left:50px;
+}
+.isitext{
+    padding: 4px;
+    padding-right: 170px;
+    border: transparent;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    
+}
+.submit{
+    margin: 5px 160px;
+    margin-bottom: 20px;
+    padding: 5px 50px;
+    color: white;
+    background-color: #ec730a;
+    border: transparent;
+    border-radius: 7px;
+}
+
+.container-news{
+    margin-top: 500px;
+}
+.garis{
+    content: '';
+    height: 3px;
+    width: 950px;
+    background-color: #ec730a;
+    margin-top: -40px;
+    margin-left: 160px;
+    margin-right: 180px;
+}
+.view{
+    margin-left: 1130px;
+    display: flex;
+    margin-top: -14px;
+    background-color: transparent;
+    color: darkgray;
+    border: 2px solid transparent;
+}
+.panah{
+    width:5px;
+    height:5px;
+    position: static;
+    border: 2px solid transparent;
+    border-right: 3px solid #ec730a;
+    border-top: 3px solid #ec730a;
+    transform: rotate(45deg);
+    margin-left: 1200px;
+    margin-top: -14px;
+}
+.berita{
+  margin-top: 50px;
+}
+.berita1{
+  margin: 0;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+
+}
+.berita2{
+  margin: 0;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+
+}
+.berita3{
+  margin: 0;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+ 
+}
+.berita4{
+  margin: 0;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+
+}
+.berita5{
+  margin: 0;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+
+}
+.gambarberita{
+  width: 270px;
+  height: 180px;
+  transition: all 0.3s;
+  transform: scale(1);
+  
+}
+.judulberita, .color{
+  position: relative;
+}
+.color{
+  background-image: linear-gradient(#354451c9,#111);
+  margin-top: -30px;
+  margin-left: 10px;
+  width: 220px;
+  height: 90px;
+  
+}
+.judulberita{
+  margin: 28px;
+  text-align: center;
+  font-size: 15px;
+  background-color: transparent;
+  margin-top: -60px;
+  color: white;
+  width: 190px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.berita1:hover .gambarberita{
+  transform: scale(1.1);
+}
+.berita1:hover .judulberita{
+  color: #c05b05;
+}
+.berita2:hover .gambarberita{
+  transform: scale(1.1);
+}
+.berita2:hover .judulberita{
+  color: #c05b05;
+}
+.berita3:hover .gambarberita{
+  transform: scale(1.1);
+}
+.berita3:hover .judulberita{
+  color: #c05b05;
+}
+.berita4:hover .gambarberita{
+  transform: scale(1.1);
+}
+.berita4:hover .judulberita{
+  color: #c05b05;
+}
+.berita5:hover .gambarberita{
+  transform: scale(1.1);
+}
+.berita5:hover .judulberita{
+  color: #c05b05;
+}
+.iklan{
+  margin-top: 80px;
+}
+.juduliklan{position: relative;
+  float: left;
+  padding-right: 500px;
+  padding-left: 0px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid #ff6600;
+}
+.titlekiri{
+  position: absolute;
+  float: right;
+  padding: 11px 50px;
+  padding-right: 420px;
+  margin-left: 630px;
+  margin-top: -43px;
+  background-color:	#ff6600;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  color: white;
+}
+.iklanmobil{
+  margin-top: 5px;
+  position: relative;
+  
+}
+.zoom-effect {
+  position: absolute;
+  width: 240px;
+  height: 180px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.boxgambar{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.gambariklan{
+  margin-top: 10px;
+  width: 230px;
+  height: 170px;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+.profil img{
+  position: absolute;
+  margin-left: -650px;
+  margin-top: 20px;
+  width: 35x;
+  height: 45px;
+  border-radius: 99em;
+  border: 0px;
+  box-shadow: 0px 0px 0px 2px rgb(204, 204, 204);
+   padding: 0px
+}
+.isiiklan{
+  margin-top: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: absolute;
+  width: 210px;
+  height: 225px;
+  background-color: white;
+  box-shadow: 0px 0px 0px 1px rgb(204, 204, 204);
+  text-align: center;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+.namamobil{
+  text-align: center;
+}
+.harga{
+  text-align: center;
+}
+.tawar{
+  color: white;
+  background-color: #ff6600;
+  border: transparent;
+  border-radius: 8px;
+  padding: 4px 75px;
+}
+.gambaricon{
+  width: 20px;
+  height: 20px;
+}
+.info{
+  color: #111;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+.tahun{
+  float: left;
+  background-color: transparent;
+  border: transparent;
+}
+.kilometer{
+  float: right;
+  background-color: transparent;
+  border: transparent;
+}
+.tipe{
+  float: left;
+  background-color: transparent;
+  border: transparent;
+}
+.bahanbakar{
+  float: right;
+  background-color: transparent;
+  border: transparent;
+}
+.iconthn{
+  margin-left: -20px;
+  margin-top: 13px;
+}
+.infothn{
+  margin-top: -21px;
+  margin-left: 50px;
+}
+.iconkm{
+  margin-left: -170px;
+  margin-top: 15px;
+}
+.infokm{
+  margin-left: -80px;
+  margin-top: -22px;
+}
+.icontp{
+  margin-left: -115px;
+  margin-top: 55px;
+}
+.infotp{
+  margin-left: -40px;
+  margin-top: -22px;
+}
+.icontpauto{
+  margin-left: -133px;
+  margin-top: 55px;
+}
+.infotpauto{
+  margin-left: -40px;
+  margin-top: -22px;
+}
+.iconbk{
+  margin-top: 55px;
+  margin-left: -170px;
+}
+.infobk{
+  margin-top: -20px;
+  margin-left: -90px;
+}
+.namamobil{
+  margin: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.iklan1:hover .gambariklan{
+  transform: scale(1.1);
+}
+.iklan1:hover .isiiklan{
+  background-image: linear-gradient(#263b4e,#111);
+  color: white;
+  box-shadow: none;
+}
+.iklan1:hover .info{
+  color: white;
+}
+.iklan2{
+  float: left;
+  margin-left: -408px;
+  cursor: pointer;
+}
+.profil2 img{
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 20px;
+  width: 45x;
+  height: 45px;
+  border-radius: 99em;
+  border: 0px;
+  box-shadow: 0px 0px 0px 2px rgb(204, 204, 204);
+  padding: 0px;
+  }
+  
+.iklan3{
+  float: left;
+  margin-left: -163px;
+  cursor: pointer;
+}
+.profil3 img{
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 20px;
+  width: 45x;
+  height: 45px;
+  border-radius: 99em;
+  border: 0px;
+  box-shadow: 0px 0px 0px 2px rgb(204, 204, 204);
+  padding: 0px;
+  }
+  
+.iklan4{
+  float: left;
+  margin-left: 81px;
+  cursor: pointer;
+}
+.profil4 img{
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 20px;
+  width: 45x;
+  height: 45px;
+  border-radius: 99em;
+  border: 0px;
+  box-shadow: 0px 0px 0px 2px rgb(204, 204, 204);
+  padding: 0px;
+  }
+  
+.iklan5{
+  float: left;
+  margin-left: 330px;
+  cursor: pointer;
+}
+.profil5 img{
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 20px;
+  width: 45x;
+  height: 45px;
+  border-radius: 99em;
+  border: 0px;
+  box-shadow: 0px 0px 0px 2px rgb(204, 204, 204);
+  padding: 0px;
+  }
+
+  .iklan6{
+    float: left;
+    margin-top: 400px;
+    margin-left: -660px;
+    cursor: pointer;
+  }
+
+  .profil6 img{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 35x;
+    height: 45px;
+    border-radius: 99em;
+    border: 0px;
+    box-shadow: 0px 0px 0px 2px rgb(204, 204, 204);
+     padding: 0px
+  }
+  .iklan7{
+    float: left;
+    margin-left: -410px;
+    margin-top: 400px;
+    cursor: pointer;
+  }
+  .profil7 img{
+    position: absolute;
+    margin-left: 8px;
+    margin-top: 20px;
+    width: 45x;
+    height: 45px;
+    border-radius: 99em;
+    border: 0px;
+    box-shadow: 0px 0px 0px 2px rgb(204, 204, 204);
+    padding: 0px;
+    }
+  .iklan8{
+    float: left;
+    margin-left: -163px;
+    margin-top: 400px;
+    cursor: pointer;
+  }
+  .profil8 img{
+    position: absolute;
+    margin-left: 8px;
+    margin-top: 20px;
+    width: 45x;
+    height: 45px;
+    border-radius: 99em;
+    border: 0px;
+    box-shadow: 0px 0px 0px 2px rgb(204, 204, 204);
+    padding: 0px;
+  }
+  .iklan9{
+    float: left;
+    margin-left: 87px;
+    margin-top: 400px;
+    cursor: pointer;
+  }
+.profil9 img{
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 20px;
+  width: 45x;
+  height: 45px;
+  border-radius: 99em;
+  border: 0px;
+  box-shadow: 0px 0px 0px 2px rgb(204, 204, 204);
+  padding: 0px; 
+  }
+.iklan10{
+  float: left;
+  margin-left: 250px;
+  margin-top: 400px;
+  cursor: pointer;
+}    
+.colorview{
+  float: left;
+  position: absolute;
+  width: 231px;
+  height: 377px;
+  background-color: rgba(250, 112, 32, 0.864);
+  margin-left: 994px;
+  margin-top: 400px;
+  cursor: pointer;
+  text-align: center;
+}
+.viewcolor{
+  margin-top: 140px;
+  color: white;
+}
+  .iklan2:hover .gambariklan{
+    transform: scale(1.1);
+  }
+  .iklan2:hover .isiiklan{
+    background-image: linear-gradient(#263b4e,#111);
+    color: white;
+    box-shadow: none;
+  }
+  .iklan2:hover .info{
+    color: white;
+  }
+  .iklan3:hover .gambariklan{
+    transform: scale(1.1);
+  }
+  .iklan3:hover .isiiklan{
+    background-image: linear-gradient(#263b4e,#111);
+    color: white;
+    box-shadow: none;
+  }
+  .iklan3:hover .info{
+    color: white;
+  }
+  .iklan4:hover .gambariklan{
+    transform: scale(1.1);
+  }
+  .iklan4:hover .isiiklan{
+    background-image: linear-gradient(#263b4e,#111);
+    color: white;
+    box-shadow: none;
+  }
+  .iklan4:hover .info{
+    color: white;
+  }
+  .iklan5:hover .gambariklan{
+    transform: scale(1.1);
+  }
+  .iklan5:hover .isiiklan{
+    background-image: linear-gradient(#263b4e,#111);
+    color: white;
+    box-shadow: none;
+  }
+  .iklan5:hover .info{
+    color: white;
+  }
+  .iklan6:hover .gambariklan{
+    transform: scale(1.1);
+  }
+  .iklan6:hover .isiiklan{
+    background-image: linear-gradient(#263b4e,#111);
+    color: white;
+    box-shadow: none;
+  }
+  .iklan6:hover .info{
+    color: white;
+  }
+  .iklan7:hover .gambariklan{
+    transform: scale(1.1);
+  }
+  .iklan7:hover .isiiklan{
+    background-image: linear-gradient(#263b4e,#111);
+    color: white;
+    box-shadow: none;
+  }
+  .iklan7:hover .info{
+    color: white;
+  }
+  .iklan8:hover .gambariklan{
+    transform: scale(1.1);
+  }
+  .iklan8:hover .isiiklan{
+    background-image: linear-gradient(#263b4e,#111);
+    color: white;
+    box-shadow: none;
+  }
+  .iklan8:hover .info{
+    color: white;
+  }
+  .iklan9:hover .gambariklan{
+    transform: scale(1.1);
+  }
+  .iklan9:hover .isiiklan{
+    background-image: linear-gradient(#263b4e,#111);
+    color: white;
+    box-shadow: none;
+  }
+  .iklan9:hover .info{
+    color: white;
+  }
+  .rental{
+    margin-top: 920px;
+  }
+  .titlerental{
+    color: #2c2c2de0;
+    font-size: 23px;
+    margin-left: 0;
+  }
+.garisrental{
+    content: '';
+    float: right;
+    height: 3px;
+    width: 930px;
+    background-color: #0a7bec;
+    margin-top: -35px;
+    margin-left: 160px;
+    margin-bottom: 50px;
+}
+.gambarrental1{
+  position: absolute;
+  margin-left: 10px;
+  margin-top: -10px;
+  width: 220px;
+  height: 170px;
+}
+.isirental1{
+  position: absolute;
+  background-color: white;
+  margin-top: 140px;
+  margin-left: 20px;
+  height: 140px;
+  width: 200px;
+  box-shadow: 0px 0px 0px 1px rgb(204, 204, 204);
+  text-align: center;
+}
+.namaitem{
+  margin: 20px 5px;
+  margin-top: 20px;  
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.hargarental{
+  margin-top: 25px;
+  margin-bottom: 0;
+  margin-left: 70px;
+  color: #0a7bec;
+
+}
+.wakturental{
+  float: right;
+  margin-right: 10px;
+  margin-top: 0;
+}
+.gambarrental2{
+  position: absolute;
+  margin-left: 258px;
+  margin-top: -10px;
+  width: 220px;
+  height: 170px;
+}
+.isirental2{
+  position: absolute;
+  background-color: white;
+  margin-top: 140px;
+  margin-left: 268px;
+  height: 140px;
+  width: 200px;
+  box-shadow: 0px 0px 0px 1px rgb(204, 204, 204);
+  text-align: center;
+}
+.gambarrental3{
+  position: absolute;
+  margin-left: 505px;
+  margin-top: -10px;
+  width: 220px;
+  height: 170px;
+}
+.isirental3{
+  position: absolute;
+  background-color: white;
+  margin-top: 140px;
+  margin-left: 515px;
+  height: 140px;
+  width: 200px;
+  box-shadow: 0px 0px 0px 1px rgb(204, 204, 204);
+  text-align: center;
+}
+.gambarrental4{
+  position: absolute;
+  margin-left: 752px;
+  margin-top: -10px;
+  width: 220px;
+  height: 170px;
+}
+.isirental4{
+  position: absolute;
+  background-color: white;
+  margin-top: 140px;
+  margin-left: 762px;
+  height: 140px;
+  width: 200px;
+  box-shadow: 0px 0px 0px 1px rgb(204, 204, 204);
+  text-align: center;
+}
+.gambarrental5{
+  position: absolute;
+  margin-left: 1000px;
+  margin-top: -10px;
+  width: 220px;
+  height: 170px;
+}
+.isirental5{
+  position: absolute;
+  background-color: white;
+  margin-top: 140px;
+  margin-left: 1010px;
+  height: 140px;
+  width: 200px;
+  box-shadow: 0px 0px 0px 1px rgb(204, 204, 204);
+  text-align: center;
+}
+.colorrental{
+  float: left;
+  position: absolute;
+  width: 220px;
+  height: 291px;
+  background-color: #0a7becc4;
+  margin-left: 1000px;
+  margin-top: -10px;
+  cursor: pointer;
+  text-align: center;
+}
+.rentalcolor{
+  margin-top: 140px;
+  color: white;
+}
+.bener{
+  margin-top: 400px;
+}
+.benerkiri{
+  float:left;
+}
+.benerkanan{
+  float: right;
+}
+.gbrkiri{
+  width: 590px;
+}
+.gbrkanan{
+  width: 590px;
+}
+.gbrkiri:hover, .gbrkanan:hover{
+  filter: brightness(110%);
+}
+.judulvideo{
+  margin-top: 700px;
+}
+.titlevideo{
+  margin-left: 0px;
+  font-size: 20px;
+}
+.video{
+  width: 1215px;
+  margin-top: 20px;
+  height: auto;
+}
+.gambarvideo{
+  margin-top: 20px;
+  width: 370px;  
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+.viewvideo{
+  margin-left: 1130px;
+  display: flex;
+  margin-top: -25px;
+  background-color: transparent;
+  color: darkgray;
+  border: 2px solid transparent;
+}
+.panahvideo{
+  width:5px;
+  height:5px;
+  position: static;
+  border: 2px solid transparent;
+  border-right: 3px solid #ec730a;
+  border-top: 3px solid #ec730a;
+  transform: rotate(45deg);
+  margin-left: 1200px;
+  margin-top: -15px;
+}
+.isideskripsi{
+  position: absolute;
+  margin-top: -70px;
+  margin-left: 15px;
+  width: 340px;
+  height: 70px;
+  color: white;
+  background-image: linear-gradient(#19343d,#111);
+}
+.namavideo{
+  margin-top: 15px;
+  font-size: 12px;
+  margin-right: 50px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.iconplay{
+  float: right;
+  margin-right: 15px;
+  margin-top: -20px;
+  width: 30px;
+  height: 30px;
+}
+.tanggal{
+  color: rgb(187, 184, 184);
+  margin-left: 10px;
+  font-size: 12px;
+}
+.video1{
+  height: 270px;
+  width: 370px;
+  overflow: hidden;
+  margin-left: 20px;
+  margin-top: -20px;
+  margin-bottom: 50px;
+}
+.video2{
+  height: 270px;
+  width: 370px;
+  overflow: hidden;
+  margin-left: 420px;
+  margin-top: -20px;
+  margin-bottom: 50px;
+}
+.video3{  
+  height: 270px;
+  width: 370px;
+  overflow: hidden;
+  margin-top: -20px;
+  margin-left: 820px;
+  margin-bottom: 50px;
+}
+.video4{  
+  height: 270px;
+  width: 370px;
+  overflow: hidden;
+  margin-top: -20px;
+  margin-left: 1234px;
+  margin-bottom: 50px;
+}
+.video5{
+  height: 270px;
+  width: 370px;
+  overflow: hidden;
+  margin-top: -20px;
+  margin-left: 1633px;
+  margin-bottom: 50px;
+}
+.video1:hover .gambarvideo{
+  transform: scale(1.1);
+}
+.video1:hover .isideskripsi{
+  filter: brightness(120%);
+}
+.video2:hover .gambarvideo{
+  transform: scale(1.1);
+}
+.video2:hover .isideskripsi{
+  filter: brightness(120%);
+}
+.video3:hover .gambarvideo{
+  transform: scale(1.1);
+}
+.video3:hover .isideskripsi{
+  filter: brightness(120%);
+}
+.video4:hover .gambarvideo{
+  transform: scale(1.1);
+}
+.video4:hover .isideskripsi{
+  filter: brightness(120%);
+}
+.video5:hover .gambarvideo{
+  transform: scale(1.1);
+}
+.video5:hover .isideskripsi{
+  filter: brightness(120%);
+}
+footer{
+  margin-top: 20px;
+  width: 100%;
+  height: 230px;
+  background-image: linear-gradient( to right, #1d3642, #111111);
+}
+.container-footer{
+  margin-top: 100px;
+  position: relative;
+}
+.isikp{
+  position: absolute;
+  color: white;
+  margin-top: 60px;
+  margin-left: 70px;
+}
+.isiau{
+  position: absolute;
+  color: white;
+  margin-top: 100px;
+  margin-left: 70px;
+}
+.google{
+  float: right;
+  width: 120px;
+  height: 50px;
+  margin-right: 200px;
+  margin-top: 50px;
+}
+.ios{
+  float: right;
+  width: 105px;
+  height: 34px;
+  margin-right: -230px;
+  margin-top: 58px;
+}
+.sosmed{
+  float: right;
+  margin-right: -95px;
+  margin-top: 120px;
+}
+.instagram{
+  margin: 5px;
+  height: 20px;
+  width: 20px;
+}
+.fb{
+  margin: 5px;
+  height: 20px;
+  width: 20px;
+}
+.yt{
+  margin: 5px;
+  height: 20px;
+  width: 20px;
+}
+.wa{
+  position: absolute;
+  margin-top: 45px;
+  margin-left: -95px;
+  height: 20px;
+  width: 20px;
+}
+.logofooter{
+  float: right;
+  height: 130px;
+  width: 130px;
+  margin-top: 90px;
+  margin-right: -250px;
+}
